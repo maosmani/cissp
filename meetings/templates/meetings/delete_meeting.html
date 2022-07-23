@@ -1,0 +1,25 @@
+
+{% extends "meetings/admin_base_dashboard.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+   
+<div class="content-section">
+  <!-- Create a Form -->
+  <form method="POST"> 
+    <!-- Security token by Django -->
+    {% csrf_token %} 
+    <h6 class="mt-5 mb-5">  Do you want to delete this Meeting? </h6>
+    
+     <div class="form-group">
+      <button class="btn btn btn-sm btn-outline-secondary" type="submit" value="Yes">Delete</button>
+        <button class="btn btn btn-sm btn-outline-secondary" ><a class="text-decoration-none"href="/admin_dashboard/">Cancel </a> </button>
+
+            </div>
+
+
+
+    
+  </form> 
+</div> 
+
+{% endblock content %}

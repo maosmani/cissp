@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'meetings/home_page.css' %}">
+
+   
+        <title>FounderMeetings</title>
+    
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="https://foundermeetings.tk/">FounderMeetings</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+
+            <a class="nav-item nav-link" href="https://foundermeetings.tk/">Home</a>
+
+             <a class="nav-item nav-link" href="https://foundermeetings.tk/about">About</a>
+             {% comment %}
+
+             <a class="nav-item nav-link" href="{% url 'show-all-meetings' %}">Meetings</a>
+
+             {% endcomment %}
+
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+             
+              {% if user.is_authenticated %}
+              <a class="nav-item nav-link" href="{% url 'index' %}">Dashboard</a>
+
+                <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                 <li class="nav-item dropdown">
+
+                  
+        
+              {% else %}
+                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+              
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div>
+           
+          </div>
+        </div>
+        <div class="col-md-8">
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+
+           <header class="mb-4">
+                            <!-- Post title-->
+                            <header>
+                            </br>
+                        </br>
+
+<p class="text-danger font-weight-bold">Attention Founder!</p>
+
+<h6 class="fw-bolder mt-4 mb-5  font-weight-bold">65% of marketers say generating traffic and leads is their top challenge...THIS affects your startup too...Because your startup need traffic and leads to grow and scale. 
+</h6>
+
+          
+
+        <h1 class="fw-bolder mt-5 mb-5  font-weight-bold"> 
+
+FounderMeetings Easy new way to Get more traffic and leads to your Startup.
+
+
+</h1>
+
+<h6 class="fw-bolder mt-4 mb-5  font-weight-bold">
+  You are going to discover a new way that will help you get more traffic and leads to your startup so that you can make more money almost overnight.
+
+</h6>
+
+<h6 class="fw-bolder mt-4 mb-4  font-weight-bold">
+  “Master the topic, the message, and delivery” Steve Jobs.
+
+</h6>
+                           
+            </header>
+
+<p class="fw-bolder mt-5 mb-5">
+
+Dear fellow founder,
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+Did you know that 65% of marketers say generating traffic and leads is their top challenge?
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+If you are a founder that means you are a marketer too...or you are doing marketing too…
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+Because at the beginning  of any startup you need to market and sell your product...
+<p class="fw-bolder mt-5 mb-5">
+
+If you trying to get clients and subscribers to your startup THIS is marketing too…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+
+And in the marketing and business world...the most important thing is traffic and getting leads.
+<p class="fw-bolder mt-5 mb-5">
+<p class="fw-bolder mt-5 mb-5">
+Because without them your startup will fail...No revenue without leads.
+</p>
+ <p class="fw-bolder mt-5 mb-5">
+
+So If you are not getting traffic and leads your startup will suffer because without them you will not sell your product and make a profit.
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+Without profit...you will go out of business sooner or later it’s just a matter of time.
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+  or If you are not getting enough traffic and leads...
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+Then you will not make enough money to pay your bills.
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+So your business success as a founder depends on having enough traffic and leads…
+With more traffic and leads...you will  grow your startup and take it to the next level.
+
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+Having enough traffic and leads will make your startup grow and save you from going out of business…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+Lead generation is a hard process and sometimes your effort for generating leads maybe works or maybe not…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+Maybe you are running paid Ads for generating leads for your business and you are not getting results from your campaigns…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+Or maybe you are trying to generate leads through cold emails…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+So how to get more traffic and leads to your Startup?
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You can improve your lead generation process and improve your ads so that you can get the maximum results from your efforts…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You can ask other founders and marketers about  how they are getting traffic and leads to their startups...
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+For these reasons we have created an online platform that will allow you to meet other founders and marketers so that you can:
+</p>
+
+<ul class="fw-bolder mt-5 mb-5">
+<li class="fw-bolder mt-5 mb-5">
+Learn from them how they are generating leads in their startups so you can get more traffic and
+leads to your startup which means you will get more subscribers and more money…
+</li>
+<li class="fw-bolder mt-5 mb-5">
+Learn from them how they are running ads for generating leads so you can make your ads better
+which means you will get high opt-in rate…
+</li >
+<li class="fw-bolder mt-5 mb-5">
+How they are doing their funnels so that you can know what is working and what is not working
+
+so you can model them which means that you will increase your conversion rate…
+</li>
+<li class="fw-bolder mt-5 mb-5">
+You will help each other to write better ads and optimize your funnels so you can get someone to review your ads and improve them with you which means you will have  better ads…
+</li>
+<li class="fw-bolder mt-5 mb-5">
+you will help each other to solve your business problems so you can get new ways to solve your current problems which means you will solve your problems fast almost overnight…
+</li>
+<li class="fw-bolder mt-5 mb-5">
+you will help each other make better processes for generating leads so you can get more leads and clients to your startup which means you can grow it and scale it super fast…
+</li>
+<li class="fw-bolder mt-5 mb-5">
+And so much more…
+</li>
+
+</ul>
+
+
+<h2 class="fw-bolder mt-5 mb-5  font-weight-bold"> 
+
+  How it works:
+</h2>
+
+<p class="fw-bolder mt-5 mb-5">
+
+Each week you will meet with two other founders on zoom call…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You will tell them how you are getting traffic and leads…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+They will tell you how they are getting traffic and leads too…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You will help each other to improve your lead generation process…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You will help each other to write better ads and how to improve your current ads…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You will tell them what are your current problems and they will advise you on how to solve them…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+
+You do not have to be alone in your startup journey...
+</p>
+
+
+<p class="fw-bolder mt-5 mb-5">
+
+Just create an account and then...
+</p>
+<p class="fw-bolder mt-5 mb-5">
+login to your account and see if you are an admin or a user…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+If you are a user then you will get a zoom link of the meeting in your account and if you did not find it wait until the admin will publish it...
+</p>
+<p class="fw-bolder mt-5 mb-5">
+If you find yourself an admin then you need to create a zoom meeting so that the other users with you in the group can join…
+</p>
+<p class="fw-bolder mt-5 mb-5">
+just create a zoom meeting and then publish it on your dashboard…
+</p>
+
+
+<a class="btn btn-danger btn-lg btn-block" href="{% url 'register' %}" role="button">Join Now</a>
+</br>
+</br>
+        </div>
+        <div class="col-md-2">
+          <div >
+           
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

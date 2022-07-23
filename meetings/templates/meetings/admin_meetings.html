@@ -1,0 +1,61 @@
+{% extends "meetings/admin_base_dashboard.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+  
+{% if meetings %}
+
+{% for meeting  in meetings %}
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link text-decoration-none" data-toggle="collapse" href="#{{ meeting.id}}">
+        <h6>{{ meeting.title }}</h6>
+      </a>
+    </div>
+    <div id="{{ meeting.id}}" class="collapse hide" data-parent="#accordion">
+      <div class="card-body">
+
+        
+        <h6>Meeting description: </h6><p>{{ meeting.about_meeting }}</p>
+        
+
+
+       <h6>Date of the meeting: </h6> <p>{{ meeting.date|date }}</p>
+
+        <h6>Time of the meeting: </h6><p>{{ meeting.time|time }}</p>
+
+        <h6>Zoom url of the  meeting: </h6><p>{{ meeting.zoom_url }}</p>
+        <h6>Zoom password of the  meeting: </h6><p>{{ meeting.zoom_password }}</p>
+
+
+
+       
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+
+          <a href="/delete/{{meeting.id }}" class="btn btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Delete</a>
+
+           <a href="/update/{{meeting.id }}" class="btn btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Update</a>
+
+
+          </div>
+          </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+      {% endfor %}
+
+           {% else %}
+        <p>Sorry, There is no meeting in this area yet.</p>
+        {% endif %}       
+
+
+    </div>
+{% endblock content %}

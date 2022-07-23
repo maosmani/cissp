@@ -1,0 +1,89 @@
+
+{% extends "meetings/user_base_dashboard.html" %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+ 
+
+ <div class="content-section">
+  
+{% if meetings %}
+
+{% for meeting  in meetings %}
+ 
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link text-decoration-none" data-toggle="collapse" href="#{{ meeting.id}}">
+        <h6>{{ meeting.title }}</h6>
+      </a>
+    </div>
+    <div id="{{ meeting.id}}" class="collapse hide" data-parent="#accordion">
+      <div class="card-body">
+
+       
+
+        
+
+       <p>{{ meeting.about_meeting }}</p>
+
+       <h6>Date of the meeting: </h6> <p>{{ meeting.date|date }}</p>
+
+        <h6>Time of the meeting: </h6><p>{{ meeting.time|time }}</p>
+
+       
+         
+
+
+
+        <div>
+     
+
+             <a href="http://127.0.0.1:8000/meeting_details/{{ meeting.id }}" class="btn btn-primary  active" role="button" aria-pressed="true">Meeting Details</a>
+
+        {% comment%}
+
+        <a href="http://127.0.0.1:8000/meeting_details/{{ meeting.id }}">Meeting Details</a>
+
+     </br>
+
+        <a href="{{ meeting.zoom_url }}" class="btn btn-primary  active" role="button" aria-pressed="true">Open The meeting Link</a>
+
+        {% endcomment %}
+
+        {% comment %}
+
+          <a class="btn btn-primary" href="https://dzmeetings.herokuapp.com/delete_student_meeting/{{meeting.id }}" role="button">Delete Meeting</a>
+
+          {% endcomment %}
+
+       </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+      {% endfor %}
+
+           {% else %}
+        <p>Sorry, There is no meetings yet.</p>
+        {% endif %}       
+
+
+
+      
+
+
+    </div>
+
+
+
+{% endblock content %}
+
+ 
+
+
+
