@@ -35,12 +35,12 @@ class MeetingsForm(ModelForm):
         #fields = ['topic','title','zoom_url','zoom_password','about_meeting','date','time']
         fields = ['title','about_meeting','date','time','zoom_url','zoom_password']
         widgets = {
-            'date': DateInput(attrs={'class': 'form-control mt-2 mb-2 '}),
-            'time':TimeInput(attrs={'class': 'form-control mt-2 mb-2 '}),
-            'title': forms.TextInput(attrs={'class': 'form-control mt-2 mb-2 '}),
-            'about_meeting': forms.Textarea(attrs={'class': 'form-control mt-2 mb-2'}),
-            'zoom_url': forms.URLInput(attrs={'class': 'form-control mt-2 mb-2 '}),
-            'zoom_password': forms.TextInput(attrs={'class': 'form-control mt-2 mb-2 '})
+            'date': DateInput(attrs={'class': 'form-control mt-3 mb-3 '}),
+            'time':TimeInput(attrs={'class': 'form-control mt-3 mb-3'}),
+            'title': forms.TextInput(attrs={'class': 'form-control mt-3 mb-3 '}),
+            'about_meeting': forms.Textarea(attrs={'class': 'form-control mt-3 mb-3'}),
+            'zoom_url': forms.URLInput(attrs={'class': 'form-control mt-3 mb-3 '}),
+            'zoom_password': forms.TextInput(attrs={'class': 'form-control mt-3 mb-3 '})
 
 
             }

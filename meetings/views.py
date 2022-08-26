@@ -90,21 +90,9 @@ def admin_attendee_list(request):
 def user_dashboard(request):
 	current_user = request.user
 
-	print(current_user.admin_key)
 
-	data = StudentMeetings.objects.all().filter(new_user = current_user.id)
-
-	list_of_meetings_index = []
-
-	for meeting in data:
-
-
-		list_of_meetings_index.append(meeting.meetings.id)
 	context = {
-	        #'meetings': Meetings.objects.all()
-	        #get all record where the curent user
-	        #'StudentMeetings': StudentMeetings.objects.all().filter(new_user = current_user.id)
-	        #'meetings' : Meetings.objects.filter( id__in = list_of_meetings_index)
+
 	        'meetings' : Meetings.objects.filter(user = current_user.admin_key)
 	        
 	    }
