@@ -7,7 +7,7 @@ chardet
 colorama
 cryptography
 dj-database-url
-Django
+Django==3.1
 django-bootstrap
 django-ckeditor
 django-crispy-forms
