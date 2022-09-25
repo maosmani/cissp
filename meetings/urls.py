@@ -6,7 +6,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('admin_keys', views.UsersView)
-
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
@@ -33,3 +33,5 @@ urlpatterns = [
 
 
 ]
+
+urlpatterns += staticfiles_urlpatterns()
