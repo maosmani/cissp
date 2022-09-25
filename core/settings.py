@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
-import django_on_heroku
 import dj_database_url
 from pathlib import Path
 
@@ -158,4 +157,3 @@ EMAIL_HOST_PASSWORD = "googleosmani19911991"
 
 
 
-django_on_heroku.settings(locals())
