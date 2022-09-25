@@ -25,10 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '3gjm^_scxasa&ewe64tb$ass7t)z*a45aycsqnwo3j!+^=xq&j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['cissp.up.railway.app','cisspmeetings.tk','https://cisspmeetings.tk/']
-CSRF_TRUSTED_ORIGINS=['cissp.up.railway.app','cisspmeetings.tk','https://cisspmeetings.tk/']
+ALLOWED_HOSTS = ['https://cisspmeetings.tk']
+
+CSRF_TRUSTED_ORIGINS = ['https://cisspmeetings.tk']
 
 # Application definition
 
