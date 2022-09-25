@@ -28,7 +28,7 @@ SECRET_KEY = '3gjm^_scxasa&ewe64tb$ass7t)z*a45aycsqnwo3j!+^=xq&j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cissp.up.railway.app','cisspmeetings.tk'']
+ALLOWED_HOSTS = ['cissp.up.railway.app','cisspmeetings.tk']
 
 
 # Application definition
