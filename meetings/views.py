@@ -21,7 +21,7 @@ def sales(request):
 
 def home(request):
 
-	return render(request,'meetings/home.html')
+	return render(request,'meetings/index.html')
 	#return redirect('show-all-meetings')
 
 

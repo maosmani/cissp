@@ -1,19 +1,58 @@
 {% extends "users/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="content-section">
+
+ <div class=" flex flex-col justify-center">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
-                {{ form|crispy }}
+                <legend class="text-white text-center my-6 mx-32 ">Join Today</legend>
+        <div class="form-group">
+            <div class="mb-4">
+     <label class="block  text-gray-700 text-sm font-bold my-5" for="user_name">
+        Username
+      </label>
+      <div class="my-6">{{ form.user_name }}</div>
+
+      <label class="block text-gray-700 text-sm font-bold my-5" for="user_name">
+        Email
+      </label>
+      <div class="my-6">{{ form.email }}</div>
+        
+
+        <label class="block text-gray-700 text-sm font-bold my-5" for="user_name">
+        First name
+      </label>
+      <div class="my-6">{{ form.first_name }}</div>
+        
+
+        <label class="block text-gray-700 text-sm font-bold my-5" for="user_name">
+        Last name
+      </label>
+      <div class="my-6">{{ form.last_name }}</div>
+
+       <label class="block text-gray-700 text-sm font-bold my-5" for="user_name">
+        Password
+      </label>
+      <div class="my-6">{{ form.password1 }}</div>
+       <label class="block text-gray-700 text-sm font-bold my-5" for="user_name">
+        Re type Password
+      </label>
+      <div class="my-6">{{ form.password2 }}</div>
+        
+        
+    </div>
+             </div>
+
             </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+           
+
+         <div class="my-6">
+                <button  class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900" type="submit">Sign Up</button>
             </div>
         </form>
         <div class="border-top pt-3">
-            <small class="text-muted">
+            <small class="text-white text-center my-6">
                 Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
             </small>
         </div>
